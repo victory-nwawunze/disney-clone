@@ -11,8 +11,14 @@ function Detail() {
         <img src="/images/imgTitle-removebg-preview.png" />
       </ImageTitle>
       <Controls>
-        <PlayButton></PlayButton>
-        <TrailerButton></TrailerButton>
+        <PlayButton>
+          <img src="/images/play-icon-black.png" />
+          <span>PLAY</span>
+        </PlayButton>
+        <TrailerButton>
+          <img src="/images/play-icon-white.png" />
+          <span>Trailer</span>
+        </TrailerButton>
         <AddButton></AddButton>
         <GroupWatchButton></GroupWatchButton>
       </Controls>
@@ -54,8 +60,31 @@ const ImageTitle = styled.div`
     object-fit: contain;
   }
 `;
-const Controls = styled.div``;
-const PlayButton = styled.button``;
-const TrailerButton = styled.button``;
+const Controls = styled.div`
+  display: flex;
+`;
+const PlayButton = styled.button`
+  border-radius: 4px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background: rgb(249, 249, 249);
+  border: none;
+  padding: 0px 24px;
+  margin-right: 22px;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(198, 198, 198);
+  }
+`;
+const TrailerButton = styled(PlayButton)`
+  background: rgb(0, 0, 0, 0.3);
+  border: 1px solid rgb(249, 249, 249);
+  color: rgb(249, 249, 249);
+  text-transform: uppercase;
+`;
 const AddButton = styled.button``;
 const GroupWatchButton = styled.button``;
