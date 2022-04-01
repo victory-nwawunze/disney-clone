@@ -10,6 +10,12 @@ function Detail() {
       <ImageTitle>
         <img src="/images/imgTitle-removebg-preview.png" />
       </ImageTitle>
+      <Controls>
+        <PlayButton></PlayButton>
+        <TrailerButton></TrailerButton>
+        <AddButton></AddButton>
+        <GroupWatchButton></GroupWatchButton>
+      </Controls>
     </Container>
   );
 }
@@ -48,3 +54,8 @@ const ImageTitle = styled.div`
     object-fit: contain;
   }
 `;
+const Controls = styled.div``;
+const PlayButton = styled.button``;
+const TrailerButton = styled.button``;
+const AddButton = styled.button``;
+const GroupWatchButton = styled.button``;
