@@ -5,8 +5,11 @@ function Detail() {
   return (
     <Container>
       <Background>
-        <img src="https://wallpaperaccess.com/full/1202064.jpg" />
+        <img src="https://wallpaperaccess.com/full/1202063.jpg" />
       </Background>
+      <ImageTitle>
+        <img src="/images/imgTitle-removebg-preview.png" />
+      </ImageTitle>
     </Container>
   );
 }
@@ -25,10 +28,23 @@ const Background = styled.div`
   top: 0;
   right: 0;
   z-index: -1;
+  opacity: 0.8;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+`;
+
+const ImageTitle = styled.div`
+  height: 30vh;
+  width: 35vw;
+  min-height: 170px;
+  min-width: 200px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 `;
